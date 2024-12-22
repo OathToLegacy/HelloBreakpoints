@@ -9,7 +9,6 @@ int main()
 
 	for (int i = 0; i < 17; i++)
 	{
-
 		arrB[i] = arrA[16 - i];
 		printPtr = &arrB[i];
 		printf("%c", *printPtr);
