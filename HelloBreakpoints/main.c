@@ -5,14 +5,14 @@ int main()
 	char arrA[17] = { 'H', 'E', 'L', 'L', 'O', ' ', 'B', 'R', 'E', 'A', 'K', 'P', 'O', 'I', 'N', 'T', 'S'};
 	char arrB[17];
 
-	char* printPtr = 'X';
+	char* printPtr = 'X'; //array pointer
 
 	for (int i = 0; i < 17; i++)
 	{
 
 		arrB[i] = arrA[16 - i];
-		printPtr = &arrB[i];
-		printf("%c", *printPtr);
+		printPtr = &arrB[i]; //address of the array to be printed.
+		printf("%c", *printPtr); //printed the value of the array using the address.
 		arrA[16 - i] = 'X';
 		
 	}
