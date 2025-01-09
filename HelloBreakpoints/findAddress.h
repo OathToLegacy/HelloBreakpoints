@@ -1,4 +1,4 @@
-#pragma once
+#include "promptUser.h"
 
 //A small function to get the address of the position in the array and return it. 
 
@@ -8,7 +8,7 @@ int* findAddress(int i, char arr[17])
 {
 	int *arrAddr = &arr[i];
 	
-
-
+	
+	while (promptUser(arrAddr) == -1) {}
 	return arrAddr;
 }
